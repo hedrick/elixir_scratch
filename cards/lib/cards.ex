@@ -21,8 +21,15 @@ defmodule Cards do
     Enum.shuffle(deck)
   end
 
-  def contains?(deck, hand) do
-    Enum.member?(deck, hand)
+@doc """
+  Determines whether a deck contains a given card.
+## Examples
+    iex> deck = Cards.create_deck
+    iex> Cards.contains?(deck, "A of Spades")
+    true
+"""  
+  def contains?(deck, card) do
+    Enum.member?(deck, card)
   end
 
 @doc """
@@ -39,6 +46,14 @@ defmodule Cards do
     Enum.split(deck, hand_size)
   end
 
+@doc """
+  Saves deck given a filename.
+## Examples
+    iex> deck = Cards.create_deck
+    iex> deck = Cards.shuffle(deck)
+    iex> Cards.save(deck, "mytestdeck")
+    :ok
+"""  
   def save(deck, filename) do
     binary = :erlang.term_to_binary(deck)
     File.write(filename, binary)
