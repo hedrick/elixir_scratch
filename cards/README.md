@@ -1,18 +1,8 @@
 # Cards
 
-**TODO: Add description**
+**A simple Elixir Application that Generates and Deals a deck of cards**
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `cards` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:cards, "~> 0.1.0"}
-  ]
-end
+## Project 1 in '[The Complete Elixir and Phoenix Bootcamp and Tutorial](https://www.udemy.com/the-complete-elixir-and-phoenix-bootcamp-and-tutorial/learn/v4/content)' by [Stephen Grider](https://github.com/StephenGrider)
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
